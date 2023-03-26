@@ -1,5 +1,15 @@
 body{
-    background:blueviolet;
+    background:linear-gradient(to right, #1DD9D9, #C2E2E2, #1DD9D9);
+    min-width: 320px;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 button{
@@ -14,7 +24,7 @@ button{
 }
 
 button:hover{
-    background-color: black;
+    background-color: white;
 }
 .Tortillo{
     position: relative;
@@ -22,14 +32,21 @@ button:hover{
     text-align: center;
     letter-spacing: 8px;
     font-size: xx-large;
-    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-family: LeoHand;
 }
 
 .container{
+    max-width: 1312px;
     width: 100%;
     height: auto;
     position: relative;
-    overflow: auto;
+    margin: auto auto;
+}
+
+@media(max-width: 560px){
+    .container{
+        padding: 0 24px;
+    }
 }
 
 .entrance{
@@ -53,7 +70,7 @@ button:hover{
 
 .reviews{
     position: relative;
-    margin-left: 43%;
+    margin-left: 540px;
     margin-top: -50px;
     border: none;
 }
@@ -65,29 +82,30 @@ button:hover{
     border: none;
 }
 
-.wedding_cakes{
+.text_above_the_cake{
+    margin: -50px;
     position: relative;
     height: auto;
     letter-spacing: 8px;
     font-size: xx-large;
-    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-family: LeoHand;
     text-align: center;
     margin-top: 5%;
 }
-.wedding_cake_picture{
+.cakes{
     position: relative;
     margin-left: 450px;
     width: 400px;
     height: auto;
 }
 
-.wedding_cake_picture img{
+.cakes img{
     width: 100%;
     height: auto;
     border-radius: 30px;
 }
 
-.wedding_cake_picture .but{
+.cakes .but{
     position: absolute;
     top: 50%;
     width: 200px;
@@ -101,38 +119,7 @@ button:hover{
     border-radius: 5px;
 }
 
-.wedding_cake_picture .but:hover{
+.cakes .but:hover{
     background-color: black;
 }
 
-.chieldren_cakes{
-    position: relative;
-    margin-left: 450px;
-    margin-top: 3%;
-    width: 400px;
-    height: auto;
-}
-
-.chieldren_cakes img{
-    width: 100%;
-    height: auto;
-    border-radius: 30px;
-}
-
-.chieldren_cakes .but{
-    position: absolute;
-    top: 50%;
-    width: 200px;
-    margin-left: -300px;
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.chieldren_cakes.but:hover{
-    background-color: black;
-}
