@@ -23,6 +23,8 @@
         exit();
     }
 
+    $pass = md5($pass."nnniikita667872");
+
     $link = new mysqli($serevername, $username, $password, $bdname);
 
     if($link->connect_error){
@@ -33,4 +35,6 @@
             VALUES('$login', '$name', '$pass')");
     
     $mysql->close;
+
+    header('Location: http://project/сайт/confectioneryWebsite/main.html');
 ?>
