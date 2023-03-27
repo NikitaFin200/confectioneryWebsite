@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="style1.css">
     <script src="myPhp.php"></script>
     <script src="chek.php"></script>
+    <script src="update.php"></script>
 
 </head>
-<body>
     <div class="container">
         <div class="Tortillo">
             <h1>Tortillo</h1>
@@ -20,11 +20,12 @@
 
     <div class="container">
         <div class = "row">
+            
             <div class="col">
                 <div class="text_above_the_cake">
                     <h2>Форма регистрации</h2>
                 </div>
-                <form action="files/chek.php" method="post">
+                <form action="chek.php" method="post">
                     <input type="text" class="form-control" name="login"
                     id="login" placeholder="Введите логин"><br>
 
@@ -37,20 +38,55 @@
                 <button class="btn btn-success" type="submit">Зарегестрировать</button>
             </form>
         </div>
-        <div class="col">
-            <div class="text_above_the_cake">
-                <h2>Форма авторизации</h2>
+
+            <div class="col">
+                <div class="text_above_the_cake">
+                    <h2>Форма авторизации</h2>
+                </div>
+                <form action="auth.php" method="post">
+                    <input type="text" class="form-control" name="login"
+                    id="login" placeholder="Введите логин"><br>
+
+                    <input type="password" class="form-control" name="pass"
+                    id="pass" placeholder="Введите пароль"><br>
+
+                <button class="btn btn-success" type="submit">Войти</button>
+                </form>
             </div>
-            <form action="files/auth.php" method="post">
-                <input type="text" class="form-control" name="login"
-                id="login" placeholder="Введите логин"><br>
 
-                <input type="password" class="form-control" name="pass"
-                id="pass" placeholder="Введите пароль"><br>
+            <div class="col">
+                <div class="text_above_the_cake">
+                    <h2>Изменить имя</h2>
+                </div>
+                <form action="update.php" method="post">
+                    <input type="text" class="form-control" name="login"
+                    id="login" placeholder="Введите логин"><br>
 
-            <button class="btn btn-success" type="submit">Войти</button>
-        </form>
-    </div>
+                    <input type="password" class="form-control" name="pass"
+                    id="pass" placeholder="Введите пароль"><br>
+                
+                    <input type="text" class="form-control" name="name"
+                    id="name" placeholder="Введите новое имя"><br>
+
+                    <button class="btn btn-success" type="submit">Изменить</button>
+                </form>
+            </div>
+
+            <div class="col">
+                <div class="text_above_the_cake">
+                    <h2>Удалить пользователя</h2>
+                </div>
+                <form action="delete.php" method="post">
+                    <input type="text" class="form-control" name="name"
+                    id="name" placeholder="Введите имя"><br>
+
+                    <input type="password" class="form-control" name="pass"
+                    id="pass" placeholder="Введите пароль"><br>
+    
+                <button class="btn btn-success" type="submit">Удалить</button>
+                </form>
+            </div>
+
         </div>
     </div>
 

@@ -23,7 +23,7 @@
         exit();
     }
 
-    $pass = md5($pass."nnniikita667872");
+    /*$pass = md5($pass."nnniikita667872");*/
 
     $link = new mysqli($serevername, $username, $password, $bdname);
 

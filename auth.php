@@ -19,7 +19,19 @@
         print("Такой пользователь не найден");
         exit();
     }
+    else{
+        print("Привет, " . $usert['name'] . ". Вы успешно авторизовались.");
+    }
 
-    setcookie('user', $usert['name'],  time() + 3600);    
+    /*
+    if($_COOKIE['user'] == ''){
+        print("Не авторизован");
+    }
+    else{
+        print("Привте" . $_COOKIE['user'])
+    }*/
+    
+    setcookie('user', $usert['name'],  time() + 3600);   
+
     $mysql->close;
 ?>
