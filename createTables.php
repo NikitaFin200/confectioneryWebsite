@@ -2,7 +2,7 @@
 $serevername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "base";
+$dbname = "bd";
 
 $link = new mysqli($serevername, $username, $password, $dbname);
 
@@ -12,8 +12,8 @@ if($link->connect_error){
 
 $sql = "CREATE TABLE users(
         id INT AUTO_INCREMENT PRIMARY KEY,
+        login VARCHAR (30) NOT NULL,
         name VARCHAR (30) NOT NULL,
-        surname VARCHAR (30) NOT NULL,
         password VARCHAR (30) NOT NULL)";
 
 if($link->query($sql) === TRUE){

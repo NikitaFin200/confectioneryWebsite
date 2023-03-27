@@ -12,7 +12,7 @@ else {
     print("Соединение установлено успешно");
 }
 
-$sql = "CREATE DATABASE base";
+$sql = "CREATE DATABASE bd";
 
 if($link->query($sql)===TRUE){
     print("Database created successfully");

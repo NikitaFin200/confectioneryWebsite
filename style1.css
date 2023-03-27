@@ -3,8 +3,6 @@ body{
     min-width: 320px;
 }
 
-
-
 img{
     max-width: 100%;
     height: auto;
@@ -39,7 +37,7 @@ button{
 }
 
 button:hover{
-    background-color: blue;
+    background-color: black;
 }
 .Tortillo{
     position: relative;
@@ -137,4 +135,3 @@ button:hover{
 .cakes .but:hover{
     background-color: black;
 }
-
