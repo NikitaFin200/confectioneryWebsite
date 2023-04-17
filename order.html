@@ -1,0 +1,116 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tortillo</title>
+
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<div class="container">
+    <div class="Tortillo">
+        <h1>Tortillo</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class = "row">
+        
+        <div class="col">
+            <div class="text_above_the_cake">
+                <h2>Оформление заказа</h2>
+            </div>
+            <form action="addOrder.php" method="post">
+                <input type="text" class="form-control" name="product"
+                id="product" placeholder="Что хотитет заказать?"><br>
+
+                <input type="text" class="form-control" name="filling"
+                id="filling" placeholder="Начинка"><br>
+
+                <input type="text" class="form-control" name="weight"
+                id="weight" placeholder="Какой вес продукта"><br>
+
+                <input type="text" class="form-control" name="name"
+                id="name" placeholder="Введите ваше имя"><br>
+
+                <input type="text" class="form-control" name="surname"
+                id="surname" placeholder="Введите вашу фамилию"><br>
+                
+                <select name="where" id="where">
+                <option id="w">Выберите место</option>
+                <option>тут</option>
+                <option>там</option>
+                </select>
+            <button class="btn btn-success" type="submit">Оформить</button>
+        </form>
+    </div>
+
+        <div class="col">
+            <div class="text_above_the_cake">
+                <h2>Авторизация</h2>
+            </div>
+            <form action="auth.php" method="post">
+                <input type="text" class="form-control" name="login"
+                id="login" placeholder="Введите логин"><br>
+
+                <input type="password" class="form-control" name="pass"
+                id="pass" placeholder="Введите пароль"><br>
+
+            <button class="btn btn-success" type="submit">Войти</button>
+            </form>
+        </div>
+
+        <div class="col">
+            <div class="text_above_the_cake">
+                <h2>Изменить имя</h2>
+            </div>
+            <form action="updateOrders.php" method="post">
+                <input type="number" class="form-control" name="id"
+                id="id" placeholder="id"><br>
+
+                <input type="text" class="form-control" name="product"
+                id="product" placeholder="Изменить продукт"><br>
+
+                <input type="text" class="form-control" name="filling"
+                id="filling" placeholder="Изменить начинку"><br>
+
+                <input type="text" class="form-control" name="weight"
+                id="weight" placeholder="Изменить вес"><br>
+
+                <input type="text" class="form-control" name="name"
+                id="name" placeholder="Изменить имя"><br>
+
+                <input type="text" class="form-control" name="surname"
+                id="surname" placeholder="Изменить фамилию"><br>
+                
+                <select name="where" id="wh">
+                <option id="whe">Измените место</option>
+                <option>тут</option>
+                <option>там</option>
+                </select>
+                <button class="btn btn-success" type="submit">Изменить</button>
+            </form>
+        </div>
+
+        <div class="col">
+            <div class="text_above_the_cake">
+                <h2>Удалить заказ</h2>
+            </div>
+            <form action="deleteOrders.php" method="post">
+                <input type="text" class="form-control" name="product"
+                id="product" placeholder="Ваш продукт"><br>
+
+                <input type="text" class="form-control" name="name"
+                id="name" placeholder="Введите ваше имя"><br>
+
+                <input type="text" class="form-control" name="surname"
+                id="surname" placeholder="Введите вашу фамилию"><br>
+                
+            <button class="btn btn-success" type="submit">Удалить</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+</html>

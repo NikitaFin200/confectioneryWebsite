@@ -1,6 +1,7 @@
 body{
     background:linear-gradient(to right, #1DD9D9, #C2E2E2, #1DD9D9);
     min-width: 320px;
+    max-width: 100%;
 }
 
 img{
@@ -15,6 +16,13 @@ input[type=text] {
     box-sizing: border-box;
 }
 
+select{
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
 input[type=password]{
     width: 200px;
     padding: 12px 20px;
@@ -23,8 +31,10 @@ input[type=password]{
 }
 
 form{
+    margin-left: 100px;
     text-align: center;
 }
+
 button{
     width: 200px;
     height: 50px;
@@ -54,6 +64,7 @@ button:hover{
     height: auto;
     position: relative;
     margin: auto auto;
+    max-width: 100%;
 }
 
 @media(max-width: 560px){
@@ -98,13 +109,21 @@ button:hover{
 .text_above_the_cake{
     margin: -50px;
     position: relative;
+    max-width: 100%;
     height: auto;
     letter-spacing: 8px;
     font-size: xx-large;
     font-family: LeoHand;
     text-align: center;
     margin-top: 5%;
+    overflow: auto;
 }
+
+.col{
+    max-width: 100%;
+    width: 100%;
+}
+
 .cakes{
     position: relative;
     margin-left: 450px;
