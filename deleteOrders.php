@@ -25,8 +25,10 @@
                     WHERE `name` = '$name' AND
                     `surname` = '$surname'");
 
-    $result = $link->query("DELETE FROM `orders`
-                    WHERE id = '$row[0]'");
+    $res = $link->query("DELETE FROM `orders`
+                    INNER JOIN `customer`
+                    ON `customer.orders` = `orders.id`
+                    WHERE `orders.id` = `customer.orders`");
 
     $result = $link->query("DELETE FROM `place`
                     WHERE `orders` = '$row[0]'");
