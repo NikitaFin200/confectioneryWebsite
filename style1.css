@@ -31,6 +31,7 @@ input[type=password]{
 }
 
 form{
+    margin-top: 10px;
     margin-left: 100px;
     text-align: center;
 }
@@ -51,17 +52,26 @@ button:hover{
 }
 .Tortillo{
     position: relative;
-    width: 100%;
+    width: auto;
     text-align: center;
     letter-spacing: 8px;
     font-size: xx-large;
     font-family: LeoHand;
 }
 
+.reg{
+    position: relative;
+    width: 7%;
+    margin-left: 87%;
+    margin-top: -7%;
+    font-size: xx-large;
+    font-family: LeoHand;
+    color: #555;
+}
+
 .container{
     max-width: 1312px;
     width: 100%;
-    height: auto;
     position: relative;
     margin: auto auto;
     max-width: 100%;
@@ -90,6 +100,7 @@ button:hover{
     margin-left: 161px;
     margin-top: 50px;
     border: none;
+    max-width: 100%;
 }
 
 .reviews{
@@ -107,22 +118,17 @@ button:hover{
 }
 
 .text_above_the_cake{
-    margin: -50px;
-    position: relative;
+    /*position: relative;
     max-width: 100%;
     height: auto;
     letter-spacing: 8px;
-    font-size: xx-large;
-    font-family: LeoHand;
-    text-align: center;
-    margin-top: 5%;
-    overflow: auto;
+    /*font-family: LeoHand;*/
+    text-align: center; 
 }
-
+/*
 .col{
     max-width: 100%;
-    width: 100%;
-}
+}*/
 
 .cakes{
     position: relative;

@@ -6,8 +6,6 @@
 
     $login = htmlspecialchars(filter_var(trim($_POST['login'])));
 
-    $name = htmlspecialchars(filter_var(trim($_POST['name'])));
-
     $pass = htmlspecialchars(filter_var(trim($_POST['pass'])));
 
     $link = new mysqli($serevername, $username, $password, $bdname);
@@ -17,7 +15,7 @@
     }
 
     $result = $link->query("DELETE FROM `user`
-                    WHERE `name` = '$name' AND
+                    WHERE `login` = '$login' AND
                     `password` = '$pass'");
 
 $mysql->close;

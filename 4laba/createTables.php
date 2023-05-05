@@ -10,10 +10,13 @@ if($link->connect_error){
     die("Connection failed: " . $link->connect_error);
 }
 
-$sql = "CREATE TABLE orde(
+$sql = "CREATE TABLE user(
         id INT AUTO_INCREMENT PRIMARY KEY,
-        login VARCHAR (30) NOT NULL,
         name VARCHAR (30) NOT NULL,
+        surname VARCHAR (30) NOT NULL,
+        age INT(30) NOT NULL,
+        email VARCHAR (30) NOT NULL,
+        login VARCHAR (30) NOT NULL,
         password VARCHAR (30) NOT NULL)";
 
 if($link->query($sql) === TRUE){
