@@ -16,6 +16,13 @@ input[type=text] {
     box-sizing: border-box;
 }
 
+.home{
+    position: fixed;
+    max-width: 90%;
+    height: 10px;
+    font-weight: 100px;
+}
+
 select{
     width: 200px;
     padding: 12px 20px;

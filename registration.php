@@ -86,5 +86,5 @@
     
     $mysql->close;
 
-    header('Location: http://project/сайт/confectioneryWebsite/main.html');
+    header('Location: http://project/сайт/confectioneryWebsite/main.php');
 ?>

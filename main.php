@@ -13,15 +13,19 @@
 </head>
 
 <body>
+    <div class="home">
+    <?php require "authorization.html"; ?>
+    </div>
+    
     <div class="container">
         <div class="Tortillo">
             <h1>Tortillo</h1>
         </div>
 
         <div class = "reg">
-            <a href="authorization.html">Регистрацияя</a>
+            <a href="authorization.html">Регистрация</a>
         </div>
-    </div>
+    </div> 
 
     <div class="col">
         <div class="text_above_the_cake">
