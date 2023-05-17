@@ -1,15 +1,46 @@
 body{
     background:linear-gradient(to right, #1DD9D9, #C2E2E2, #1DD9D9);
     min-width: 320px;
-}
-
-html{
-    box-sizing: border-box;
+    max-width: 100%;
 }
 
 img{
     max-width: 100%;
     height: auto;
+}
+
+input[type=text] {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.home{
+    position: fixed;
+    max-width: 90%;
+    height: 10px;
+    font-weight: 100px;
+}
+
+select{
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=password]{
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+form{
+    margin-top: 10px;
+    margin-left: 100px;
+    text-align: center;
 }
 
 button{
@@ -24,23 +55,33 @@ button{
 }
 
 button:hover{
-    background-color: white;
+    background-color: black;
 }
 .Tortillo{
     position: relative;
-    width: 100%;
+    width: auto;
     text-align: center;
     letter-spacing: 8px;
     font-size: xx-large;
     font-family: LeoHand;
 }
 
+.reg{
+    position: relative;
+    width: 7%;
+    margin-left: 87%;
+    margin-top: -7%;
+    font-size: xx-large;
+    font-family: LeoHand;
+    color: #555;
+}
+
 .container{
     max-width: 1312px;
     width: 100%;
-    height: auto;
     position: relative;
     margin: auto auto;
+    max-width: 100%;
 }
 
 @media(max-width: 560px){
@@ -66,6 +107,7 @@ button:hover{
     margin-left: 161px;
     margin-top: 50px;
     border: none;
+    max-width: 100%;
 }
 
 .reviews{
@@ -83,15 +125,18 @@ button:hover{
 }
 
 .text_above_the_cake{
-    margin: -50px;
-    position: relative;
+    /*position: relative;
+    max-width: 100%;
     height: auto;
     letter-spacing: 8px;
-    font-size: xx-large;
-    font-family: LeoHand;
-    text-align: center;
-    margin-top: 5%;
+    /*font-family: LeoHand;*/
+    text-align: center; 
 }
+/*
+.col{
+    max-width: 100%;
+}*/
+
 .cakes{
     position: relative;
     margin-left: 450px;
@@ -122,4 +167,3 @@ button:hover{
 .cakes .but:hover{
     background-color: black;
 }
-
